@@ -4,5 +4,5 @@ import 'package:flutter/material.dart';
 
 void main() async {
   initDiContainer();
-  runApp(const MyApp());
+  runApp(MyMaterialApp());
 }

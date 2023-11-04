@@ -1,17 +1,18 @@
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home_page.dart';
+import 'package:bab_alomda_assessment_flutter/presentation/app/theme_data.dart';
+import 'package:bab_alomda_assessment_flutter/presentation/routing/routing.dart';
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueGrey),
-        useMaterial3: true,
-      ),
-      home: const HomePage(),
-    );
-  }
+class MyMaterialApp extends MaterialApp {
+  MyMaterialApp({
+    String? initialRoute,
+    RouteFactory? onGenerateRoute,
+    super.home,
+    super.navigatorKey,
+    super.key,
+    super.navigatorObservers,
+  }) : super(
+          theme: themeData,
+          initialRoute: initialRoute ?? Routing.home,
+          onGenerateRoute: onGenerateRoute ?? Routing.onGenerateRoute,
+        );
 }

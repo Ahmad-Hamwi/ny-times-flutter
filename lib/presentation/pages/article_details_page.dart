@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class ArticleDetailsPageArgs {}
+
+class ArticleDetailsPage extends StatelessWidget {
+  final ArticleDetailsPageArgs args;
+
+  const ArticleDetailsPage({super.key, required this.args});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +15,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Home Page',
+              'ArticleDetails Page',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
