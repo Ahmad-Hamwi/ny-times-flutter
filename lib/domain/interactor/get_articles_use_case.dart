@@ -11,7 +11,7 @@ class GetArticlesUseCase
   GetArticlesUseCase(this._articlesRepository);
 
   @override
-  Future<List<ArticleEntity>> execute(GetArticlesParams params) {
+  Future<List<ArticleEntity>> execute([GetArticlesParams? params]) {
     return _articlesRepository.getArticles(params);
   }
 }
