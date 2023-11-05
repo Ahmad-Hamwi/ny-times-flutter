@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
         preferredSize: const Size.fromHeight(58.0),
         child: HomeAppBar(
           onQuerySubmitted: (q) {},
+          onViewToggled: (isListView) {},
         ),
       ),
       body: const Center(),

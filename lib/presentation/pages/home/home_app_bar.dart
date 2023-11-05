@@ -5,8 +5,13 @@ import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
   final void Function(String submittedQuery) onQuerySubmitted;
+  final void Function(bool isListView) onViewToggled;
 
-  const HomeAppBar({super.key, required this.onQuerySubmitted});
+  const HomeAppBar({
+    super.key,
+    required this.onQuerySubmitted,
+    required this.onViewToggled,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +20,11 @@ class HomeAppBar extends StatelessWidget {
       title: SearchTextField(
         onQuerySubmitted: onQuerySubmitted,
       ),
+      actions: <Widget>[
+        ToggleListActionButton(
+          onToggled: onViewToggled,
+        ),
+      ],
     );
   }
 }
