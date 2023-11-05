@@ -3,7 +3,11 @@ import 'package:animations/animations.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final themeData = ThemeData(
-  textTheme: GoogleFonts.notoSansTextTheme(),
+  useMaterial3: true,
+  textTheme: GoogleFonts.openSansTextTheme(),
+  colorScheme: ColorScheme.fromSeed(
+    seedColor: Colors.blueGrey,
+  ),
   pageTransitionsTheme: const PageTransitionsTheme(
     builders: {
       TargetPlatform.android: SharedAxisPageTransitionsBuilder(
