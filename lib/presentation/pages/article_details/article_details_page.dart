@@ -37,7 +37,11 @@ class ArticleDetailsPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            RemoteImage(src: args.article.largeImageSrc),
+            RemoteImage(
+              fit: BoxFit.fill,
+              src: args.article.largeImageSrc,
+              height: 250,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Column(
