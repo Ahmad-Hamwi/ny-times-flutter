@@ -17,17 +17,24 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   late bool isListView;
+  late String searchQuery;
+
   late HomeBloc bloc;
 
   @override
   void initState() {
     isListView = true;
+    searchQuery = "";
     bloc = sl<HomeBloc>();
     super.initState();
   }
 
   void onViewToggled() {
     setState(() => isListView = !isListView);
+  }
+
+  void onQuerySubmitted(String q) {
+    setState(() => searchQuery = q);
   }
 
   void navigateToArticleDetails(BuildContext context, ArticleEntity article) {
@@ -44,7 +51,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: HomeAppBarBlocBuilder(
           isListView: isListView,
-          onQuerySubmitted: (q) {},
+          onQuerySubmitted: onQuerySubmitted,
           onViewToggled: onViewToggled,
           onFilterSelected: (String? filter) {
             bloc.add(FetchArticles(filter));
@@ -52,6 +59,7 @@ class _HomePageState extends State<HomePage> {
         ),
         body: HomeBodyBlocBuilder(
           isListView: isListView,
+          searchQuery: searchQuery,
           onArticleClicked: (article) {
             navigateToArticleDetails(context, article);
           },
