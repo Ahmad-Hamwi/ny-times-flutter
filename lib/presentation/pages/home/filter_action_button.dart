@@ -29,6 +29,7 @@ class _FilterActionButtonState extends State<FilterActionButton> {
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<String?>(
+      constraints: const BoxConstraints.expand(width: 150, height: 325),
       icon: selectedFilter == null
           ? const Icon(Icons.filter_alt_outlined)
           : const Icon(Icons.filter_alt),
