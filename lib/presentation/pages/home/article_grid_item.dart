@@ -23,6 +23,7 @@ class ArticleGridItem extends StatelessWidget {
           children: [
             Flexible(
               child: RemoteImage(
+                height: 150,
                 src: article.thumbnailSrc,
                 fit: BoxFit.cover,
                 borderRadius: const BorderRadiusDirectional.only(
