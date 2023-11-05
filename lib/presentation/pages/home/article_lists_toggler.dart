@@ -19,7 +19,7 @@ class ArticleListsToggler extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-      duration: const Duration(milliseconds: 100),
+      duration: const Duration(milliseconds: 300),
       child: isListView
           ? ArticlesList(
               articles: articles,
