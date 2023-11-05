@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
         child: HomeAppBar(
           onQuerySubmitted: (q) {},
           onViewToggled: (isListView) {},
+          onFilterSelected: (String? filter) {},
         ),
       ),
       body: const Center(),
