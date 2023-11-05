@@ -38,7 +38,7 @@ class ArticleDetailsPage extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             RemoteImage(
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
               src: args.article.largeImageSrc,
               height: 250,
             ),
