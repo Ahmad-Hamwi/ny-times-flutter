@@ -23,7 +23,7 @@ class RemoteImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: borderRadius ?? const BorderRadius.all(Radius.circular(4)),
+      borderRadius: borderRadius ?? const BorderRadius.all(Radius.circular(0)),
       child: src != null
           ? Image.network(
               src!,
