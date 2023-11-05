@@ -49,11 +49,15 @@ class ArticlesLoaded extends ListState
   ArticlesLoaded(this.articles, this.sections);
 }
 
-class ArticlesError extends ListState implements HomeStateHasError {
+class ArticlesError extends ListState
+    implements HomeStateHasError, HomeStateHasSections {
   @override
   final dynamic e;
+  @override
+  final List<SectionEntity> sections;
+  final String? sectionFilter;
 
-  ArticlesError(this.e);
+  ArticlesError(this.e, this.sections, this.sectionFilter);
 }
 
 abstract class HomeStateHasArticles {

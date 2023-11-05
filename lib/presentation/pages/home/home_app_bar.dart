@@ -5,12 +5,14 @@ import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
   final bool isListView;
+  final List<String> options;
   final void Function(String submittedQuery) onQuerySubmitted;
   final void Function() onViewToggled;
   final void Function(String? value) onFilterSelected;
 
   const HomeAppBar({
     super.key,
+    required this.options,
     required this.isListView,
     required this.onQuerySubmitted,
     required this.onViewToggled,
@@ -26,7 +28,7 @@ class HomeAppBar extends StatelessWidget {
       ),
       actions: <Widget>[
         FilterActionButton(
-          options: const ["arts", "automobiles", "books", "business"],
+          options: options,
           onValueSelected: onFilterSelected,
         ),
         ToggleListActionButton(

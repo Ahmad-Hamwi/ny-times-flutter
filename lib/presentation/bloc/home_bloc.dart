@@ -62,7 +62,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
         emit(ArticlesLoaded(articles, sections));
       } catch (e) {
-        emit(ArticlesError(e));
+        emit(ArticlesError(e, sections, event.section));
       }
     });
   }
