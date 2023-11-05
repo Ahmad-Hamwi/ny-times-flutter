@@ -40,7 +40,11 @@ class _FilterActionButtonState extends State<FilterActionButton> {
             .map(
               (e) => PopupMenuItem<String?>(
                 key: e == null ? FilterActionButton.removeKey : null,
-                onTap: () => selectFilter(e),
+                onTap: () {
+                  if (selectedFilter != e) {
+                    selectFilter(e);
+                  }
+                },
                 child: Container(
                   color:
                       e != null && e == selectedFilter ? Colors.black12 : null,
