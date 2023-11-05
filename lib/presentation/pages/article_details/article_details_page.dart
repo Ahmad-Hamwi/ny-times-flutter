@@ -1,6 +1,11 @@
+import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
 import 'package:flutter/material.dart';
 
-class ArticleDetailsPageArgs {}
+class ArticleDetailsPageArgs {
+  final ArticleEntity article;
+
+  ArticleDetailsPageArgs(this.article);
+}
 
 class ArticleDetailsPage extends StatelessWidget {
   final ArticleDetailsPageArgs args;

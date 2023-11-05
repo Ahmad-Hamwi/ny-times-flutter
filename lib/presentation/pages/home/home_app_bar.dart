@@ -4,12 +4,14 @@ import 'package:bab_alomda_assessment_flutter/presentation/pages/home/toggle_lis
 import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
+  final bool isListView;
   final void Function(String submittedQuery) onQuerySubmitted;
-  final void Function(bool isListView) onViewToggled;
+  final void Function() onViewToggled;
   final void Function(String? value) onFilterSelected;
 
   const HomeAppBar({
     super.key,
+    required this.isListView,
     required this.onQuerySubmitted,
     required this.onViewToggled,
     required this.onFilterSelected,
@@ -29,6 +31,7 @@ class HomeAppBar extends StatelessWidget {
         ),
         ToggleListActionButton(
           onToggled: onViewToggled,
+          isListView: isListView,
         ),
         const SizedBox(width: 8),
       ],

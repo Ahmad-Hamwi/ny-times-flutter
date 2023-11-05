@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import '../../fakes/domain/entity_fakes.dart';
 import '../../util/app/testing_app.dart';
 
 void main() {
@@ -32,7 +33,12 @@ void main() {
         );
         await widgetTester.pumpAndSettle();
 
-        sut.pushArticleDetails(key.currentContext!, false, ArticleDetailsPageArgs());
+        sut.pushArticleDetails(
+          key.currentContext!,
+          ArticleDetailsPageArgs(
+            FakeArticleEntity()
+          ),
+        );
         await widgetTester.pumpAndSettle(); // home to articleDetails
 
         expect(find.byKey(const Key(Routing.articleDetails)), findsOneWidget);

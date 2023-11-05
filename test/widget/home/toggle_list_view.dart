@@ -5,39 +5,33 @@ import '../../util/app/testing_app.dart';
 
 void main() {
   group("ToggleListView tests", () {
-    testWidgets("Toggle initial state is a list view", (tester) async {
+    final gridFinder = find.byKey(ToggleListActionButton.gridKey);
+    final listFinder = find.byKey(ToggleListActionButton.listKey);
+
+    testWidgets("grid icon when isListView is true", (tester) async {
       await tester.pumpWidget(
         TestingMaterialApp(
           home: ToggleListActionButton(
-            onToggled: (isListView) {},
+            isListView: true,
+            onToggled: () {},
           ),
         ),
       );
-
-      expect(find.byKey(ToggleListActionButton.gridKey), findsOneWidget);
-    });
-
-    testWidgets("Toggle behavior works both ways", (tester) async {
-      await tester.pumpWidget(
-        TestingMaterialApp(
-          home: ToggleListActionButton(
-            onToggled: (isListView) {},
-          ),
-        ),
-      );
-
-      final gridFinder = find.byKey(ToggleListActionButton.gridKey);
-      final listFinder = find.byKey(ToggleListActionButton.listKey);
-
-      await tester.tap(gridFinder);
-      await tester.pump();
-
-      expect(listFinder, findsOneWidget);
-
-      await tester.tap(listFinder);
-      await tester.pump();
 
       expect(gridFinder, findsOneWidget);
+    });
+
+    testWidgets("list icon when isListView is false", (tester) async {
+      await tester.pumpWidget(
+        TestingMaterialApp(
+          home: ToggleListActionButton(
+            isListView: false,
+            onToggled: () {},
+          ),
+        ),
+      );
+
+      expect(listFinder, findsOneWidget);
     });
   });
 }

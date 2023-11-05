@@ -7,9 +7,9 @@ abstract class IAppNavigator {
 
   void pushArticleDetails(
     BuildContext context,
-    bool finish,
-    ArticleDetailsPageArgs pageArgs,
-  );
+    ArticleDetailsPageArgs pageArgs, {
+    bool finish = false,
+  });
 }
 
 class AppNavigator extends IAppNavigator {
@@ -18,9 +18,9 @@ class AppNavigator extends IAppNavigator {
   @override
   void pushArticleDetails(
     BuildContext context,
-    bool finish,
-    ArticleDetailsPageArgs pageArgs,
-  ) {
+    ArticleDetailsPageArgs pageArgs, {
+    bool finish = false,
+  }) {
     Navigator.of(context).pushNamedAndRemoveUntil(
       Routing.articleDetails,
       (route) => !finish,
