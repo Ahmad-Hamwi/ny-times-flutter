@@ -10,6 +10,12 @@ abstract class IAppNavigator {
     ArticleDetailsPageArgs pageArgs, {
     bool finish = false,
   });
+
+  void pushWebPage(
+    BuildContext context,
+    String src, {
+    bool finish = false,
+  });
 }
 
 class AppNavigator extends IAppNavigator {
@@ -25,6 +31,19 @@ class AppNavigator extends IAppNavigator {
       Routing.articleDetails,
       (route) => !finish,
       arguments: pageArgs,
+    );
+  }
+
+  @override
+  void pushWebPage(
+    BuildContext context,
+    String src, {
+    bool finish = false,
+  }) {
+    Navigator.of(context).pushNamedAndRemoveUntil(
+      Routing.webPage,
+      (route) => !finish,
+      arguments: src,
     );
   }
 }

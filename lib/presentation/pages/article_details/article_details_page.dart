@@ -1,4 +1,5 @@
 import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
+import 'package:bab_alomda_assessment_flutter/presentation/routing/app_navigator.dart';
 import 'package:bab_alomda_assessment_flutter/presentation/widgets/remote_image.dart';
 import 'package:flutter/material.dart';
 
@@ -67,12 +68,20 @@ class ArticleDetailsPage extends StatelessWidget {
                     args.article.description,
                     style: const TextStyle(fontSize: 16),
                   ),
-                  Text(
-                    "Read more...",
-                    style: TextStyle(
-                      color: Colors.blue[800],
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                  GestureDetector(
+                    onTap: () {
+                      const AppNavigator().pushWebPage(
+                        context,
+                        args.article.articleHtml,
+                      );
+                    },
+                    child: Text(
+                      "Read more...",
+                      style: TextStyle(
+                        color: Colors.blue[800],
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   )
                 ],

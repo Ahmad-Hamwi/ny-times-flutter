@@ -17,7 +17,7 @@ void main() {
     });
 
     testWidgets(
-      "Navigates to orders when work state is not the inactive work state and driver is locked out",
+      "Navigates to article details",
       (widgetTester) async {
         final GlobalKey<NavigatorState> key = GlobalKey();
 
@@ -35,13 +35,38 @@ void main() {
 
         sut.pushArticleDetails(
           key.currentContext!,
-          ArticleDetailsPageArgs(
-            FakeArticleEntity()
-          ),
+          ArticleDetailsPageArgs(FakeArticleEntity()),
         );
         await widgetTester.pumpAndSettle(); // home to articleDetails
 
         expect(find.byKey(const Key(Routing.articleDetails)), findsOneWidget);
+      },
+    );
+
+    testWidgets(
+      "Navigates to web page",
+      (widgetTester) async {
+        final GlobalKey<NavigatorState> key = GlobalKey();
+
+        await widgetTester.pumpWidget(
+          TestingMaterialApp(
+            navigatorKey: key,
+            initialRoute: Routing.home,
+            routeStubbingOptions: const {
+              Routing.home: true,
+              Routing.webPage: true,
+            },
+          ),
+        );
+        await widgetTester.pumpAndSettle();
+
+        sut.pushWebPage(
+          key.currentContext!,
+          "",
+        );
+        await widgetTester.pumpAndSettle(); // home to web page
+
+        expect(find.byKey(const Key(Routing.webPage)), findsOneWidget);
       },
     );
   });
