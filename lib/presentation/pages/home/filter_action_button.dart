@@ -22,6 +22,7 @@ class _FilterActionButtonState extends State<FilterActionButton> {
   void selectFilter(String? filter) {
     setState(() {
       selectedFilter = filter;
+      widget.onValueSelected(filter);
     });
   }
 
