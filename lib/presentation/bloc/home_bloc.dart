@@ -43,10 +43,6 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     });
 
     on<FetchArticles>((event, emit) async {
-      if (state is ArticlesLoading) {
-        return;
-      }
-
       final sections = (state as HomeStateHasSections).sections;
 
       emit(ArticlesLoading(sections));
