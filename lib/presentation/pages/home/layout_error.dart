@@ -12,7 +12,7 @@ class LayoutError extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(e.toString()),
+          Text(e.toString(), textAlign: TextAlign.center),
           const SizedBox(height: 32),
           ElevatedButton(
             onPressed: onRetry,

@@ -6,7 +6,10 @@ class LayoutEmpty extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("No results, try with another filter"),
+      child: Text(
+        "No results, try with another filter",
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }

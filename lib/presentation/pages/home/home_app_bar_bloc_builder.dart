@@ -26,11 +26,11 @@ class HomeAppBarBlocBuilder extends StatelessWidget
           case HomeInitial:
           case HomeLoading:
           case HomeError:
-          case ArticlesError:
             return Container(height: preferredSize.height);
           case HomeLoaded:
           case ArticlesLoading:
           case ArticlesLoaded:
+          case ArticlesError:
             final stateWithSections = state as HomeStateHasSections;
             return HomeAppBar(
               options: stateWithSections.sections.map((e) => e.name).toList(),
