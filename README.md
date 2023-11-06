@@ -1,3 +1,14 @@
+## Running the project
+
+### Run the `build_runner`
+`dart run build_runner build --delete-conflicting-outputs`
+
+### Test the app
+Running unit tests by `flutter test` and integration tests `flutter test integration_test`
+
+### Running the app
+ensure you have a device connected and run `flutter run lib/entrypoint/main.dart`
+
 ## Project structure
 
 ### Presentation Layer
@@ -28,9 +39,6 @@ Found under the test folder, contains plain dart tests and UI widget tests.
 
 ### Integration tests
 Found under the integration_test folder, contains tests of the domain + data layer altogether.
-
-### Running the tests
-Running unit tests by `flutter test` and integration tests `flutter test integration_test`
 
 ## Notes
 
