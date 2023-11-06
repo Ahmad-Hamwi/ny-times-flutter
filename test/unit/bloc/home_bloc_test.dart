@@ -1,4 +1,3 @@
-import 'package:bab_alomda_assessment_flutter/domain/entity/section_entity.dart';
 import 'package:bab_alomda_assessment_flutter/presentation/bloc/home_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
@@ -62,6 +61,11 @@ void main() {
     });
 
     test("emits loading and loaded when fetch articles event", () {
+      bloc = HomeBloc(
+        mockGetArticlesUseCase,
+        mockGetSectionsUseCase,
+        initialState: HomeLoaded([], []),
+      );
       when(mockGetArticlesUseCase.execute(any)).thenAnswer((_) async => []);
 
       bloc.add(FetchArticles("any"));
@@ -75,6 +79,11 @@ void main() {
     test(
       "emits loading and error when fetch articles event but articles fail",
       () {
+        bloc = HomeBloc(
+          mockGetArticlesUseCase,
+          mockGetSectionsUseCase,
+          initialState: HomeLoaded([], []),
+        );
         when(mockGetArticlesUseCase.execute(any)).thenThrow(Exception());
 
         bloc.add(FetchArticles("any"));
