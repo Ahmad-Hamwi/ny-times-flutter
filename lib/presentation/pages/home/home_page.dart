@@ -1,10 +1,10 @@
-import 'package:bab_alomda_assessment_flutter/di/di_container.dart';
-import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/bloc/home_bloc.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/article_details/article_details_page.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/home_app_bar_bloc_builder.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/home_body_bloc_builder.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/routing/app_navigator.dart';
+import 'package:ny_times_flutter/di/di_container.dart';
+import 'package:ny_times_flutter/domain/entity/article_entity.dart';
+import 'package:ny_times_flutter/presentation/bloc/home_bloc.dart';
+import 'package:ny_times_flutter/presentation/pages/article_details/article_details_page.dart';
+import 'package:ny_times_flutter/presentation/pages/home/home_app_bar_bloc_builder.dart';
+import 'package:ny_times_flutter/presentation/pages/home/home_body_bloc_builder.dart';
+import 'package:ny_times_flutter/presentation/routing/app_navigator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,4 +1,4 @@
-import 'package:bab_alomda_assessment_flutter/presentation/app/app.dart';
+import 'package:ny_times_flutter/presentation/app/app.dart';
 
 import 'testing_routes.dart';
 

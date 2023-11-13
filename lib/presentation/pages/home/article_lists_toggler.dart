@@ -1,7 +1,7 @@
-import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
-import 'package:bab_alomda_assessment_flutter/domain/entity/section_entity.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/articles_grid.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/articles_list.dart';
+import 'package:ny_times_flutter/domain/entity/article_entity.dart';
+import 'package:ny_times_flutter/domain/entity/section_entity.dart';
+import 'package:ny_times_flutter/presentation/pages/home/articles_grid.dart';
+import 'package:ny_times_flutter/presentation/pages/home/articles_list.dart';
 import 'package:flutter/cupertino.dart';
 
 class ArticleListsToggler extends StatelessWidget {

@@ -1,8 +1,8 @@
-import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
-import 'package:bab_alomda_assessment_flutter/domain/entity/section_entity.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/article_grid_item.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/article_list_item.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/article_lists_toggler.dart';
+import 'package:ny_times_flutter/domain/entity/article_entity.dart';
+import 'package:ny_times_flutter/domain/entity/section_entity.dart';
+import 'package:ny_times_flutter/presentation/pages/home/article_grid_item.dart';
+import 'package:ny_times_flutter/presentation/pages/home/article_list_item.dart';
+import 'package:ny_times_flutter/presentation/pages/home/article_lists_toggler.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
 

@@ -1,5 +1,5 @@
-import 'package:bab_alomda_assessment_flutter/data/remote/dto/json.dart';
-import 'package:bab_alomda_assessment_flutter/data/remote/model/article_rmodel.dart';
+import 'package:ny_times_flutter/data/remote/dto/json.dart';
+import 'package:ny_times_flutter/data/remote/model/article_rmodel.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'get_articles_response.g.dart';

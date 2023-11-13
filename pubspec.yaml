@@ -1,5 +1,5 @@
-name: bab_alomda_assessment_flutter
-description: Bab Alomda assessment project
+name: ny_times_flutter
+description: Flutter app that embraces SOLID principles. Heavily unit, widget, and integration tested. Connects with the NY Times API.
 publish_to: 'none'
 
 version: 1.0.0+1

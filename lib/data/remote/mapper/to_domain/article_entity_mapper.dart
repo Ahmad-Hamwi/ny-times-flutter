@@ -1,7 +1,7 @@
-import 'package:bab_alomda_assessment_flutter/data/remote/mapper/mapper.dart';
-import 'package:bab_alomda_assessment_flutter/data/remote/model/article_rmodel.dart';
-import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
-import 'package:bab_alomda_assessment_flutter/domain/entity/section_entity.dart';
+import 'package:ny_times_flutter/data/remote/mapper/mapper.dart';
+import 'package:ny_times_flutter/data/remote/model/article_rmodel.dart';
+import 'package:ny_times_flutter/domain/entity/article_entity.dart';
+import 'package:ny_times_flutter/domain/entity/section_entity.dart';
 
 class ArticleEntityMapper extends Mapper<ArticleEntity, ArticleRemoteModel> {
   @override

@@ -1,4 +1,4 @@
-import 'package:bab_alomda_assessment_flutter/presentation/routing/routing.dart';
+import 'package:ny_times_flutter/presentation/routing/routing.dart';
 import 'package:flutter/material.dart';
 
 /// A map from a route name to a flag indicating if the route should stubbed

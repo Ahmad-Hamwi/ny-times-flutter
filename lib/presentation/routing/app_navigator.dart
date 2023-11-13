@@ -1,5 +1,5 @@
-import 'package:bab_alomda_assessment_flutter/presentation/pages/article_details/article_details_page.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/routing/routing.dart';
+import 'package:ny_times_flutter/presentation/pages/article_details/article_details_page.dart';
+import 'package:ny_times_flutter/presentation/routing/routing.dart';
 import 'package:flutter/material.dart';
 
 abstract class IAppNavigator {

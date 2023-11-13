@@ -1,4 +1,4 @@
-import 'package:bab_alomda_assessment_flutter/presentation/bloc/home_bloc.dart';
+import 'package:ny_times_flutter/presentation/bloc/home_bloc.dart';
 import 'package:bloc_test/bloc_test.dart';
 import 'package:mocktail/mocktail.dart';
 

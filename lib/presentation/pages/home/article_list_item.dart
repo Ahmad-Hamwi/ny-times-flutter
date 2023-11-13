@@ -1,5 +1,5 @@
-import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/widgets/remote_image.dart';
+import 'package:ny_times_flutter/domain/entity/article_entity.dart';
+import 'package:ny_times_flutter/presentation/widgets/remote_image.dart';
 import 'package:flutter/material.dart';
 
 class ArticleListItem extends StatelessWidget {

@@ -1,5 +1,5 @@
-import 'package:bab_alomda_assessment_flutter/presentation/bloc/home_bloc.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/home_app_bar.dart';
+import 'package:ny_times_flutter/presentation/bloc/home_bloc.dart';
+import 'package:ny_times_flutter/presentation/pages/home/home_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

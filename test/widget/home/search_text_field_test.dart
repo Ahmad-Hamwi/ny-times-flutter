@@ -1,4 +1,4 @@
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/search_text_field.dart';
+import 'package:ny_times_flutter/presentation/pages/home/search_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

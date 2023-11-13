@@ -1,4 +1,4 @@
-import 'package:bab_alomda_assessment_flutter/data/remote/dto/json.dart';
+import 'package:ny_times_flutter/data/remote/dto/json.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'multimedia_rmodel.g.dart';

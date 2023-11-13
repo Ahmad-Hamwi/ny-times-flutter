@@ -1,5 +1,5 @@
-import 'package:bab_alomda_assessment_flutter/data/remote/constants/api_endpoints.dart';
-import 'package:bab_alomda_assessment_flutter/data/remote/dto/response/get_articles_response.dart';
+import 'package:ny_times_flutter/data/remote/constants/api_endpoints.dart';
+import 'package:ny_times_flutter/data/remote/dto/response/get_articles_response.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/http.dart';
 

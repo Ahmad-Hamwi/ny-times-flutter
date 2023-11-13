@@ -1,5 +1,5 @@
-import 'package:bab_alomda_assessment_flutter/domain/entity/section_entity.dart';
-import 'package:bab_alomda_assessment_flutter/domain/gateway/sections_repository.dart';
+import 'package:ny_times_flutter/domain/entity/section_entity.dart';
+import 'package:ny_times_flutter/domain/gateway/sections_repository.dart';
 
 class SectionsRepositoryImpl extends ISectionsRepository {
   @override

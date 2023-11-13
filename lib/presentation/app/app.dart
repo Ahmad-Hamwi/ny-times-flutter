@@ -1,5 +1,5 @@
-import 'package:bab_alomda_assessment_flutter/presentation/app/theme_data.dart';
-import 'package:bab_alomda_assessment_flutter/presentation/routing/routing.dart';
+import 'package:ny_times_flutter/presentation/app/theme_data.dart';
+import 'package:ny_times_flutter/presentation/routing/routing.dart';
 import 'package:flutter/material.dart';
 
 class MyMaterialApp extends MaterialApp {

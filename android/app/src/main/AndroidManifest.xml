@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="bab_alomda_assessment_flutter"
+        android:label="ny_times_flutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

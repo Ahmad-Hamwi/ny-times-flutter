@@ -1,4 +1,4 @@
-import 'package:bab_alomda_assessment_flutter/presentation/pages/home/toggle_list_view.dart';
+import 'package:ny_times_flutter/presentation/pages/home/toggle_list_view.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../util/app/testing_app.dart';

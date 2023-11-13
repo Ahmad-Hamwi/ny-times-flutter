@@ -1,4 +1,4 @@
-import 'package:bab_alomda_assessment_flutter/entrypoint/environment.dart';
+import 'package:ny_times_flutter/entrypoint/environment.dart';
 import 'package:flutter/material.dart';
 import 'package:animations/animations.dart';
 import 'package:google_fonts/google_fonts.dart';

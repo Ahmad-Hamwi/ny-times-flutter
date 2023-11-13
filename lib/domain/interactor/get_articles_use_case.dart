@@ -1,6 +1,6 @@
-import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
-import 'package:bab_alomda_assessment_flutter/domain/entity/section_entity.dart';
-import 'package:bab_alomda_assessment_flutter/domain/gateway/articles_repository.dart';
+import 'package:ny_times_flutter/domain/entity/article_entity.dart';
+import 'package:ny_times_flutter/domain/entity/section_entity.dart';
+import 'package:ny_times_flutter/domain/gateway/articles_repository.dart';
 
 import 'use_cases.dart';
 

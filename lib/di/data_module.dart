@@ -1,6 +1,6 @@
-import 'package:bab_alomda_assessment_flutter/data/remote/api/articles_backend_api.dart';
-import 'package:bab_alomda_assessment_flutter/data/remote/constants/api_endpoints.dart';
-import 'package:bab_alomda_assessment_flutter/data/remote/interceptor/api_key_interceptor.dart';
+import 'package:ny_times_flutter/data/remote/api/articles_backend_api.dart';
+import 'package:ny_times_flutter/data/remote/constants/api_endpoints.dart';
+import 'package:ny_times_flutter/data/remote/interceptor/api_key_interceptor.dart';
 import 'package:dio/dio.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 

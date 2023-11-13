@@ -1,8 +1,8 @@
-import 'package:bab_alomda_assessment_flutter/data/remote/api/articles_backend_api.dart';
-import 'package:bab_alomda_assessment_flutter/data/remote/mapper/to_domain/article_entity_mapper.dart';
-import 'package:bab_alomda_assessment_flutter/domain/entity/article_entity.dart';
-import 'package:bab_alomda_assessment_flutter/domain/gateway/articles_repository.dart';
-import 'package:bab_alomda_assessment_flutter/domain/interactor/get_articles_use_case.dart';
+import 'package:ny_times_flutter/data/remote/api/articles_backend_api.dart';
+import 'package:ny_times_flutter/data/remote/mapper/to_domain/article_entity_mapper.dart';
+import 'package:ny_times_flutter/domain/entity/article_entity.dart';
+import 'package:ny_times_flutter/domain/gateway/articles_repository.dart';
+import 'package:ny_times_flutter/domain/interactor/get_articles_use_case.dart';
 
 class ArticlesRepositoryImpl extends IArticlesRepository {
   final IArticleApi _articleApi;
