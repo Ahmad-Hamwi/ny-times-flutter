@@ -47,7 +47,7 @@ I'm fetching articles remotely from the NY times API, and the filters (sections)
 
 #### Saving secrets (api key)
 I currently have the API key hard-coded, the best practices normally save those kind of keys locally on the developers machine and obfuscating the release builds, 
-but for the sake of the assessment I won't be hiding the key from the version control.
+but for the sake of public usability I won't be hiding the key from the version control.
 
 #### Integration testing the domain + data layers
 I normally unit test every every unit containing logic, but the domain and data layers had only routing/mapping logic, so I've written an integration which test both layers. No need for unit testing empty units.
